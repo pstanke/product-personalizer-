@@ -9,7 +9,7 @@ const ProductForm = ({
   currentColor,
   currentSize,
   setCurrentSize,
-  setAdditionalPrice,
+
   setCurrentColor,
   showSummary,
 }) => {
@@ -19,7 +19,6 @@ const ProductForm = ({
         sizes={sizes}
         currentSize={currentSize}
         setCurrentSize={setCurrentSize}
-        setAdditionalPrice={setAdditionalPrice}
       />
       <OptionColor
         colors={colors}
@@ -39,7 +38,7 @@ ProductForm.propTypes = {
   currentColor: PropTypes.string.isRequired,
   currentSize: PropTypes.string.isRequired,
   setCurrentSize: PropTypes.func.isRequired,
-  setAdditionalPrice: PropTypes.func.isRequired,
+
   setCurrentColor: PropTypes.func.isRequired,
   showSummary: PropTypes.func.isRequired,
 };
